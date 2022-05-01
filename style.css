@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+    font-size: 15pt;
+    font-family: 'Source Code Pro', monospace;
+    background: #c9c9c9;
+}
+
+
+.container{
+  position: relative;
+  left: 250px;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #e7e7e7;
+  height: 500px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.imgs{
+  position: relative;
+  top: -30px;
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+img {
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  
+}
+.fas{
+  user-select: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.progress{
+  background: #fff;
+  height: 4px;
+  width: 90%;
+  margin: 40px 30px;
+}
+.progressbar{
+  height: 4px;
+  background: #000;
+  width: 0%;
+}
+.time{
+  position: relative;
+  top: -30px;
+  display: flex;
+  justify-content: space-between;
+}
+.controls{
+  position: relative;
+  top: -15px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container{
+    height: 400px;
+    width: 350px;
+    left: 0;
+    top: 30px;
+  }
+  .imgs{
+    height: 300px;
+    width: 200px;
+    
+  }
+}
